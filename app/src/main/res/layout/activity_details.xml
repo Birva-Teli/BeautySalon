@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.project.beauty_salon.Details">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="32dp"
+        android:text="Details of Salon" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="27dp"
+        android:text="NameOfSalon:" />
+
+    <EditText
+        android:id="@+id/nameofsalon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignTop="@+id/textView2"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/nameofsalon"
+        android:layout_marginTop="41dp"
+        android:text="Address:" />
+
+    <EditText
+        android:id="@+id/edadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nameofsalon"
+        android:layout_below="@+id/nameofsalon"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/edadd"
+        android:layout_marginTop="28dp"
+        android:text="Opening Time:" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_below="@+id/btot"
+        android:layout_marginTop="48dp"
+        android:text="Closing Time:" />
+
+    <Button
+        android:id="@+id/btot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignEnd="@+id/edadd"
+        android:text="SelectOpeningTime" />
+
+    <Button
+        android:id="@+id/btct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edadd"
+        android:layout_alignTop="@+id/textView5"
+        android:text="SelectClosingTime" />
+
+
+    <TextView
+        android:id="@+id/tvot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvct"
+        android:layout_below="@+id/btot"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btct"
+        android:layout_toEndOf="@+id/radioGroup"
+        android:text="TextView" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edadd"
+        android:layout_below="@+id/tvct"
+        android:layout_marginTop="49dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/rbboth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOTH" />
+
+        <RadioButton
+            android:id="@+id/rbmale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MALE" />
+
+        <RadioButton
+            android:id="@+id/rbfemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FEMALE" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignTop="@+id/radioGroup"
+        android:layout_marginTop="27dp"
+        android:text="Type" />
+
+    <Button
+        android:id="@+id/adddetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btct"
+        android:layout_below="@+id/tvct"
+        android:layout_marginTop="19dp"
+        android:text="AddDetails" />
+
+
+</RelativeLayout>

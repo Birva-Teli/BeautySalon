@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.project.beauty_salon.MainActivity">
+
+    <Button
+        android:id="@+id/user"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/salon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="30dp"
+        android:height="20dp"
+        android:background="@drawable/usericon"
+        android:src="@drawable/usericon">
+
+    </Button>
+
+    <Button
+        android:id="@+id/salon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="57dp"
+        android:width="20dp"
+        android:height="20dp"
+        android:background="@drawable/salonimg"
+        android:src="@drawable/salonimg">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/tvsalon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvuser"
+        android:layout_alignBottom="@+id/tvuser"
+        android:layout_alignEnd="@+id/salon"
+        android:text="Salon"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/user"
+        android:layout_below="@+id/user"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="63dp"
+        android:text="User"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

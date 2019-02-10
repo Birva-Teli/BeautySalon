@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="salon" type="id">1</item>
+    <item name="btot" type="id">1</item>
+    <item name="btct" type="id">1</item>
+    <item name="nameofsalon" type="id">1</item>
+    <item name="edadd" type="id">1</item>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.project.beauty_salon.ViewDetails">
+    <TextView
+        android:id="@+id/tvsan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="55dp"
+        android:text="Salon Name:" />
+
+    <TextView
+        android:id="@+id/saladd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvsan"
+        android:layout_below="@+id/tvsan"
+        android:layout_marginTop="49dp"
+        android:text="Salon Add:" />
+
+    <TextView
+        android:id="@+id/tvot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/saladd"
+        android:layout_below="@+id/saladd"
+        android:layout_marginTop="57dp"
+        android:text="Opening Time:" />
+
+    <TextView
+        android:id="@+id/tvct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvot"
+        android:layout_below="@+id/tvot"
+        android:layout_marginTop="57dp"
+        android:text="Closing Time:" />
+
+    <TextView
+        android:id="@+id/santv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/saladd"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="113dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/adtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/saladd"
+        android:layout_alignStart="@+id/santv"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/ottv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/adtv"
+        android:layout_alignTop="@+id/tvot"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/cttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvct"
+        android:layout_alignBottom="@+id/tvct"
+        android:layout_alignStart="@+id/ottv"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvct"
+        android:layout_marginTop="70dp"
+        android:layout_toEndOf="@+id/tvct"
+        android:text="Button" />
+
+</RelativeLayout>

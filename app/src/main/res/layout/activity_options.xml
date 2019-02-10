@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.project.beauty_salon.Options">
+
+    <Button
+        android:id="@+id/allshop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/booknow"
+        android:layout_alignTop="@+id/fav"
+        android:layout_marginTop="16dp"
+        android:height="20dp"
+        android:background="@drawable/allshop" />
+
+    <Button
+        android:id="@+id/fav"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/booking"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="55dp"
+        android:height="20dp"
+        android:background="@drawable/favourite" />
+
+    <Button
+        android:id="@+id/booknow"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/booking"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="21dp"
+        android:layout_toEndOf="@+id/booking"
+        android:height="20dp"
+        android:background="@drawable/booknow" />
+
+    <Button
+        android:id="@+id/booking"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/allshop"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="69dp"
+        android:height="20dp"
+android:onClick="booking"
+        android:background="@drawable/booking" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/booking"
+        android:layout_below="@+id/allshop"
+        android:text="favourites" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/allshop"
+        android:layout_below="@+id/textView5"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"
+        android:text="allshops" />
+
+    <TextView
+        android:id="@+id/tvot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/booking"
+        android:layout_below="@+id/booknow"
+        android:text="booking" />
+
+    <TextView
+        android:id="@+id/tvct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/tvot"
+        android:text="booknow" />
+
+
+</RelativeLayout>

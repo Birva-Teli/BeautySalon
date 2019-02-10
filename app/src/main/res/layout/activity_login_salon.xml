@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.project.beauty_salon.LoginSalon">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="LOGIN"
+        android:textColor="#00f"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="64dp"
+        android:layout_toStartOf="@+id/login"
+        android:text="User Name:"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvname"
+        android:layout_alignBottom="@+id/tvname"
+        android:layout_alignEnd="@+id/btnreg"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="99dp"
+        android:layout_toEndOf="@+id/login"
+        android:text="Registration" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnreg"
+        android:layout_alignBottom="@+id/btnreg"
+        android:layout_toStartOf="@+id/login"
+        android:text="LogIn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvname"
+        android:layout_below="@+id/etname"
+        android:layout_marginTop="49dp"
+        android:text="Password:" />
+
+    <EditText
+        android:id="@+id/etpasslogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etname"
+        android:layout_alignTop="@+id/textView"
+        android:ems="10"
+        android:inputType="textPassword" />
+</RelativeLayout>

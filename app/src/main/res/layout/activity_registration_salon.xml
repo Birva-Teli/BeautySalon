@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.project.beauty_salon.RegistrationSalon">
+
+    <TextView
+        android:id="@+id/tvuserreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Registration" />
+
+    <TextView
+        android:id="@+id/tvusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvuserreg"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="37dp"
+        android:text="Name:" />
+
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvusername"
+        android:layout_alignBottom="@+id/tvusername"
+        android:layout_alignStart="@+id/spinner1"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvuserpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvusername"
+        android:layout_below="@+id/etusername"
+        android:layout_marginTop="30dp"
+        android:text="Password:" />
+
+    <EditText
+        android:id="@+id/etuserpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvuserpass"
+        android:layout_alignBottom="@+id/tvuserpass"
+        android:layout_alignStart="@+id/etusername"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tvuseremail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvusername"
+        android:layout_below="@+id/etuserpass"
+        android:layout_marginTop="122dp"
+        android:text="Email:" />
+
+    <EditText
+        android:id="@+id/etuseremail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etuserpass"
+        android:layout_alignTop="@+id/tvuseremail"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/tvuserphn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvuserpass"
+        android:layout_below="@+id/etuseremail"
+        android:layout_marginTop="31dp"
+        android:text="Phone No.:" />
+
+    <CheckBox
+        android:id="@+id/cbuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnsalonreset"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/btnsalonreg"
+        android:text="Terms and Conditions" />
+
+    <Button
+        android:id="@+id/btnsalonreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tvuseremail"
+        android:layout_marginBottom="33dp"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/btnsalonreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnsalonreg"
+        android:layout_alignBottom="@+id/btnsalonreg"
+        android:layout_alignEnd="@+id/etuserphn"
+        android:text="Reset" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvuserphn"
+        android:layout_below="@+id/etuserpass"
+        android:layout_marginTop="27dp"
+        android:text="TextView" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/etuserphn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvuserphn"
+        android:layout_alignEnd="@+id/etuseremail"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
